@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/mobileCodeInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" 
+        android:minLines="3"
+        android:background="#777777"
+		android:layout_margin="5sp"
+        android:padding="5sp"
+        android:scrollbars="vertical"/>
+	<LinearLayout 
+	    android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<Button
+	        android:id="@+id/readContacts"
+	        android:layout_width="50sp"
+	        android:layout_height="match_parent"
+	        android:text="." 
+	        android:onClick="readContacts"
+	        android:background="#AAAAAA"
+	        android:layout_marginLeft="5sp"
+	        android:layout_marginBottom="5sp"
+	        android:padding="5sp"/>
+	    <TextView
+	        android:id="@+id/mobileCode"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="11"
+	        android:gravity="right"
+	        android:textSize="36sp"
+	        android:textStyle="bold"
+	        android:maxLength="11"
+	        android:background="#888888"
+	        android:layout_marginLeft="5sp"
+	        android:layout_marginRight="5sp"
+	        android:layout_marginBottom="5sp"
+	        android:padding="5sp" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/getMobileCodeInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="getMobileCodeInfo" 
+        android:onClick="getMobileCodeInfo"
+        android:visibility="gone"
+        android:background="@drawable/button_selector"/>
+	<GridView
+	    android:id="@+id/inputCode"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:numColumns="3"
+	    android:stretchMode="columnWidth"
+	    android:horizontalSpacing="5sp"
+	    android:verticalSpacing="5sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="5sp">
+		
+	</GridView>
+
+
+
+</LinearLayout>

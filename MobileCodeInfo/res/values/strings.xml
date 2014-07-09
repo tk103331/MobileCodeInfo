@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">号码归属地</string>
+    <string name="action_settings">关于</string>
+    <string name="app_about">信息数据获取：\nhttp://www.webxml.com.cn</string>
+
+</resources>
